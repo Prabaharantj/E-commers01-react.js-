@@ -1,0 +1,71 @@
+ @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caveat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(back1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: 'Black Ops One', cursive;
+
+}
+.container{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   background-image: url(wood1.jpg);
+   background-color: coral;
+   border-radius: 10px;
+   padding: 20px;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  -moz-box-shadow: 17px 16px 37px 11px rgba(0,0,0,0.75);
+  box-shadow: 17px 16px 37px 11px rgba(0,0,0,0.75);
+}
+.status{
+  margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    color:rgb(235, 94, 7);
+    background-color: white;
+    border-radius: 20px;
+}
+button{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(235, 94, 7);
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+button:hover{
+  background-color: rgb(62, 5, 5);
+  box-shadow: 12px 12px 38px 16px #000000;
+}
+.win{
+  animation:  ani 2s ease-in-out;
+}
+@keyframes ani{
+  0%{background-color: rgb(23, 1, 1);}
+  100%{background-color: rgb(14, 14, 62);}
+}
